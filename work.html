@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/work_stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top" id="hero"></div>
+        <div class="navbar" id="navbar">
+            <div class="box">
+                <a class="link"href="index.html">O MNIE</a>
+                <a class="link" href="work.html">PRACE</a>
+                <a href="mailto:rubaswojciech@gmail.com">KONTAKT</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content">
+                <div class="box" id="box-1">
+                    <div class="img" style="background-image: url(media/ghost-love.png);"></div>
+                    <div class="undercontent">
+                        <div class="left">
+                            <div class="title">Ghost love&nbsp;(2024)</div>
+                            <div class="subtitle">— Design koszulki</div>
+                        </div>
+                        <div class="right">
+                            <div class="des">Design koszulki "Ghost Love" był zaprojektowany na praktykach zawodowych z grudnia 2024 roku.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box-2">
+                    <div class="img" style="background-image: url(media/playboy-tshirt-design.png);"></div>
+                    <div class="undercontent">
+                        <div class="left">
+                            <div class="title">Playboy&nbsp;(2024)</div>
+                            <div class="subtitle">— Design koszulki</div>
+                        </div>
+                        <div class="right">
+                            <div class="des">Design koszulki "Playboy" był zaprojektowany na praktykach zawodowych z grudnia 2024 roku.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box-3">
+                    <div class="img" style="background-image: url(media/echos-tshirt-design.png);"></div>
+                    <div class="undercontent">
+                        <div class="left">
+                            <div class="title">Echos&nbsp;(2024)</div>
+                            <div class="subtitle">— Design koszulki</div>
+                        </div>
+                        <div class="right">
+                            <div class="des">Design koszulki "Echos" był zaprojektowany na praktykach zawodowych z grudnia 2024 roku.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box-4">
+                    <div class="img" style="background-image: url(media/ares-branding.png);"></div>
+                    <div class="undercontent">
+                        <div class="left">
+                            <div class="title">Ares&nbsp;(2023)</div>
+                            <div class="subtitle">— Branding</div>
+                        </div>
+                        <div class="right">
+                            <div class="des">Branding oraz jego księga znaku zostały zaprojektowane na potrzeby szkolnego projektu.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="box">
+                <div class="content">
+                    <div class="up">
+                        <div class="left">
+                            <a href="">O MNIE</a>
+                            <a href="">PRACE</a>
+                        </div>
+                        <a href="#hero" class="backtop"><img src="media/arrow_down.svg">&nbsp; &nbsp;{&nbsp; &nbsp;Z POWROTEM NA GÓRE&nbsp; &nbsp;}</a>
+                        <div class="right">
+                            <a href="">GitHub</a>
+                            <a href="">Instagram</a>
+                            <a href="">X (Twitter)</a>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="left">
+                            <div class="headl">KONTAKT</div>
+                            <div class="content">
+                                <a href="tel:+48669750376">+48 669 750 376</a><br>
+                                <a href="mailto:rubaswojciech@gmail.com">rubaswojciech@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="headl">LOKALIZACJA</div>
+                            <div class="content">
+                                <div>Ostrów Wielkopolski, Polska</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <span>© WOJCIECH RUBAS</span>
+                    </div>
+                </div>
+                <div class="background">
+                    <img src="media/surname-svg.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("navbar");
+            const scrollPosition = window.innerHeight + window.scrollY;
+            const documentHeight = document.documentElement.scrollHeight;
+            const threshold = 16;
+
+            if (scrollPosition >= documentHeight - threshold) {
+                navbar.classList.add("hidden");
+            } else {
+                navbar.classList.remove("hidden");
+            }
+        });
+    </script>
+</body>
+</html>
